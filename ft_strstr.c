@@ -6,7 +6,7 @@
 /*   By: amontano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/18 16:02:37 by amontano          #+#    #+#             */
-/*   Updated: 2018/04/18 16:10:03 by amontano         ###   ########.fr       */
+/*   Updated: 2018/04/25 19:06:02 by amontano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strstr(const char *s1, const char *s2)
 	unsigned int	j;
 
 	i = 0;
-	if (s1[0] && s2[0])
+	if (s2[0] == '\0')
 		return ((char *)s1);
 	while (s1[i])
 	{
@@ -29,5 +29,6 @@ char	*ft_strstr(const char *s1, const char *s2)
 			return ((char *)s1 + i);
 		i++;
 	}
+	
 	return (NULL);
 }

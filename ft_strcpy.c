@@ -6,7 +6,7 @@
 /*   By: amontano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/18 13:08:23 by amontano          #+#    #+#             */
-/*   Updated: 2018/04/18 13:16:43 by amontano         ###   ########.fr       */
+/*   Updated: 2018/04/25 19:00:01 by amontano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strcpy(char *dst, const char *src)
 	{
 		dst[i] = src[i];
 		i++;
-		dst[i] = '\0';
 	}
+	dst[i] = '\0';
 	return (dst);
 }

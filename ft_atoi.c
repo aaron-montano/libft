@@ -6,7 +6,7 @@
 /*   By: amontano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/17 21:13:45 by amontano          #+#    #+#             */
-/*   Updated: 2018/04/18 16:29:42 by amontano         ###   ########.fr       */
+/*   Updated: 2018/04/25 19:12:01 by amontano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_atoi(const char *str)
 {
-	long			sign;
-	long			final;
+	long long int	sign;
+	long long int	final;
 	unsigned int	i;
 
 	sign = 1;

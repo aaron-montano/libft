@@ -6,7 +6,7 @@
 /*   By: amontano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/16 21:17:41 by amontano          #+#    #+#             */
-/*   Updated: 2018/04/25 16:13:08 by amontano         ###   ########.fr       */
+/*   Updated: 2018/04/25 18:08:08 by amontano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	ft_memdel(void **ap);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
-void	ft_putchar(char const c);
+void	ft_putchar(char c);
 void	ft_putstr(char const *str);
 size_t	ft_strlen(const char *s);
 int		ft_isupper(int	c);
