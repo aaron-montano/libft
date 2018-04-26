@@ -6,7 +6,7 @@
 /*   By: amontano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 22:16:54 by amontano          #+#    #+#             */
-/*   Updated: 2018/04/25 00:08:36 by amontano         ###   ########.fr       */
+/*   Updated: 2018/04/25 20:26:43 by amontano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char const *s, int fd)
 {
-	while (s)
+	while (*s)
 	{
 		ft_putchar_fd(*s, fd);
 		s++;

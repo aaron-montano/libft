@@ -6,7 +6,7 @@
 /*   By: amontano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/18 16:02:37 by amontano          #+#    #+#             */
-/*   Updated: 2018/04/25 19:06:02 by amontano         ###   ########.fr       */
+/*   Updated: 2018/04/25 19:50:28 by amontano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,5 @@ char	*ft_strstr(const char *s1, const char *s2)
 			return ((char *)s1 + i);
 		i++;
 	}
-	
 	return (NULL);
 }
