@@ -6,7 +6,7 @@
 #    By: amontano <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/16 21:04:13 by amontano          #+#    #+#              #
-#    Updated: 2018/04/25 23:24:19 by amontano         ###   ########.fr        #
+#    Updated: 2018/04/26 01:09:43 by amontano         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,8 @@ SOURCE = ft_strjoin.c ft_putnbr_fd.c ft_putendl_fd.c ft_putendl.c \
 		 ft_strndup.c ft_strcpy.c ft_strncpy.c ft_strcmp.c ft_strncmp.c \
 		 ft_strchr.c ft_strrchr.c ft_strstr.c ft_strnstr.c ft_strcat.c \
 		 ft_strncat.c ft_strlcat.c ft_strnew.c ft_bzero.c ft_lstadd.c \
-		 ft_lstmap.c ft_lstiter.c ft_lstdelone.c ft_lstdel.c ft_lstnew.c
+		 ft_lstmap.c ft_lstiter.c ft_lstdelone.c ft_lstdel.c ft_lstnew.c \
+		 ft_wordcount.c ft_strcapitalize.c
 
 HEADER = libft.h
 OBJ = $(SOURCE:.c=.o)

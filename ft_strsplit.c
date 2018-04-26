@@ -6,30 +6,30 @@
 /*   By: amontano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 22:38:51 by amontano          #+#    #+#             */
-/*   Updated: 2018/04/25 00:13:10 by amontano         ###   ########.fr       */
+/*   Updated: 2018/04/26 00:10:49 by amontano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-static int		ft_countword(char const *s, char c)
+static int		ft_countwordchr(char const *s, char c)
 {
 	unsigned int	i;
-	int				cn;
+	int				count;
 
 	i = 0;
-	cn = 0;
+	count = 0;
 	while (s[i])
 	{
 		while (s[i] == c)
 			i++;
 		if (s[i] != '\0')
-			cn++;
+			count++;
 		while (s[i] && s[i] != c)
 			i++;
 	}
-	return (cn);
+	return (count);
 }
 
 char			**ft_strsplit(char const *s, char c)
@@ -41,7 +41,7 @@ char			**ft_strsplit(char const *s, char c)
 
 	i = 0;
 	k = 0;
-	tab = (char **)malloc(sizeof(char *) * (ft_countword(s, c)) + 1);
+	tab = (char **)malloc(sizeof(char *) * (ft_countwordchr(s, c)) + 1);
 	if (tab == NULL)
 		return (NULL);
 	while (s[i])
