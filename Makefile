@@ -6,14 +6,13 @@
 #    By: amontano <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/16 21:04:13 by amontano          #+#    #+#              #
-#    Updated: 2018/04/25 16:13:36 by amontano         ###   ########.fr        #
+#    Updated: 2018/04/25 23:24:19 by amontano         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -std=c99
-DEPS = libft.h
 SOURCE = ft_strjoin.c ft_putnbr_fd.c ft_putendl_fd.c ft_putendl.c \
 		 ft_putstr_fd.c ft_putchar_fd.c ft_putnbr.c ft_strsplit.c \
 		 ft_strtrim.c ft_strsub.c ft_strnequ.c ft_strequ.c ft_strmapi.c \
@@ -25,8 +24,10 @@ SOURCE = ft_strjoin.c ft_putnbr_fd.c ft_putendl_fd.c ft_putendl.c \
 		 ft_toupper.c ft_atoi.c ft_itoa.c ft_iswhitespace.c ft_strdup.c \
 		 ft_strndup.c ft_strcpy.c ft_strncpy.c ft_strcmp.c ft_strncmp.c \
 		 ft_strchr.c ft_strrchr.c ft_strstr.c ft_strnstr.c ft_strcat.c \
-		 ft_strncat.c ft_strlcat.c ft_strnew.c ft_bzero.c
-HEADER = $(DEPS)
+		 ft_strncat.c ft_strlcat.c ft_strnew.c ft_bzero.c ft_lstadd.c \
+		 ft_lstmap.c ft_lstiter.c ft_lstdelone.c ft_lstdel.c ft_lstnew.c
+
+HEADER = libft.h
 OBJ = $(SOURCE:.c=.o)
 
 all : $(NAME)
