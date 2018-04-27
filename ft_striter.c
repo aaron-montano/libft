@@ -6,7 +6,7 @@
 /*   By: amontano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 21:31:52 by amontano          #+#    #+#             */
-/*   Updated: 2018/04/25 00:15:59 by amontano         ###   ########.fr       */
+/*   Updated: 2018/04/26 18:01:29 by amontano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,8 @@
 
 void	ft_striter(char *str, void (*f)(char *))
 {
-	size_t	i;
-
-	i = 0;
-	while (str[i])
-	{
-		f(str + i);
-		i++;
-	}
+	if (str == NULL || f == NULL)
+		return ;
+	while (str && *str)
+		f(str++);
 }

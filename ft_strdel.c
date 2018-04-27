@@ -6,7 +6,7 @@
 /*   By: amontano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 16:20:09 by amontano          #+#    #+#             */
-/*   Updated: 2018/04/23 16:20:45 by amontano         ###   ########.fr       */
+/*   Updated: 2018/04/26 17:34:13 by amontano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,9 @@
 
 void	ft_strdel(char **as)
 {
-	ft_memdel((void **)as);
+	if (as)
+	{
+		ft_memdel((void **)as);
+		*as = NULL;
+	}
 }

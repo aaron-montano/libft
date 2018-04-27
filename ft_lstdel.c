@@ -6,7 +6,7 @@
 /*   By: amontano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/25 22:26:41 by amontano          #+#    #+#             */
-/*   Updated: 2018/04/25 22:29:51 by amontano         ###   ########.fr       */
+/*   Updated: 2018/04/26 19:41:52 by amontano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,11 @@ void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 
 	while (*alst != NULL)
 	{
-		next = (*alst)->next;
-		ft_lstdelone(alst, del);
-		*alst = next;
+		if (del && alst)
+		{
+			next = (*alst)->next;
+			ft_lstdelone(alst, del);
+			*alst = next;
+		}
 	}
 }
