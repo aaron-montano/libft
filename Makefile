@@ -6,7 +6,7 @@
 #    By: amontano <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/16 21:04:13 by amontano          #+#    #+#              #
-#    Updated: 2018/04/26 01:09:43 by amontano         ###   ########.fr        #
+#    Updated: 2018/06/22 17:06:04 by amontano         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,10 +26,11 @@ SOURCE = ft_strjoin.c ft_putnbr_fd.c ft_putendl_fd.c ft_putendl.c \
 		 ft_strchr.c ft_strrchr.c ft_strstr.c ft_strnstr.c ft_strcat.c \
 		 ft_strncat.c ft_strlcat.c ft_strnew.c ft_bzero.c ft_lstadd.c \
 		 ft_lstmap.c ft_lstiter.c ft_lstdelone.c ft_lstdel.c ft_lstnew.c \
-		 ft_wordcount.c ft_strcapitalize.c
+		 ft_wordcount.c ft_strcapitalize.c get_next_line.c ft_strjoin.c \
 
-HEADER = libft.h
-OBJ = $(SOURCE:.c=.o)
+SRC_PATH = src/
+SRC_POS = $(addprefix $(SRC_PATH), $(SOURCE))
+OBJ = $(SRC_POS:.c=.o)
 
 all : $(NAME)
 
